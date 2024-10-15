@@ -6,9 +6,8 @@ Apuntes de clase
 
 Esto es una prueba. 
 
-quiero probar +
+quiero probar + 
 
-dfd
 
 
 
