@@ -4,6 +4,11 @@ Soy un ejemplo de código HTML
 
 ```html
 <p> Soy un párrafo </p>
+<img src="img/gatito.jpeg">
+<img src="img/gatito.jpeg">
+<img src="img/gatito.jpeg">
+
+
 ```
 
 
