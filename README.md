@@ -4,20 +4,7 @@
 
 Apuntes de clase 
 
-Esto es una prueba. 
-
-quiero probar + 
-
-f
-g
-f
-f
-f
-f
-f
-
-
-otra prueba
+Apuntes de alumnos CEI
 
 
 
