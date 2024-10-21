@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día 5</title>
+
+
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    .box{
+        width: 100px;
+        height: 100px;
+        padding: 7px;
+        margin: 10px;
+
+        /* somnbra interna */
+
+        box-shadow: inset 10px 10px 10px rgb(139,105,41);
+        /* borde dibujado a mano */
+        border-radius:255px 15px 225px 15px / 15px 225px 15px 225px;
+        /* sombra de la caja */
+        filter:drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+        /* color de texto */
+        color:rgb(27, 27, 27);
+
+
+        border:4px solid black;
+        background-color: #eb9d37;
+
+    }
+
+
+.box{
+}
+
+.inline {
+    display:inline;
+    }
+
+.block{
+    display:block;
+}
+.inline-block{
+    display:block;
+}
+
+.hidden{
+    display:none;
+}
+
+#box-especial{
+    width:500px;
+} 
+
+</style>
+
+
+
+</head>
+<body>
+    <h1>Display</h1>
+
+    <h2>Display inline</h2>
+
+    <div>
+        Ejemplo Inline block<br>
+
+
+        <span class="box inline">Caja 1</span> y 
+        <span class="box inline">Caja 2</span> Estos 
+        elementos no tienen height o width, tampoco puedo aplicar top/bottom margin.
+
+    </div>
+
+    <h2>Display Block</h2>
+
+    <div>
+        Ej block:
+        <span class="box block">Caja 1</span>
+        <span class="box block">Caja 2</span>
+
+    </div>
+    
+
+        
+    <h2>Display inline-block</h2>
+
+    <div>
+
+
+    Ejemplo Display inline block
+
+        <span id="box-especial" class="box inline-block">Caja 1  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+        <span class="box inline-block">Caja 2</span>
+
+    </div>
+
+    <h2> Display none</h2>
+
+    <div>
+
+        la caja 2 no deberia verse<br>
+    
+        <span class="box inline-block">Caja 1</span>
+        <span class="box inline-block hidden">Caja 2</span>
+        <span class="box inline-block">Caja 3</span>
+    </div>
+
+</body>
+</html>
