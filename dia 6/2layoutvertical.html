@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .header,
+        .footer {
+            background-color: rgb(250, 196, 196);
+            padding: 10px;
+            color:white;
+            size: 10px;
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            /* ocupa al menos el 100% de la altura del viewport */
+
+        }
+
+        .content {
+            flex: 1;
+            background-color: rgb(238, 221, 221);
+            padding: 10px;
+
+
+
+            /* opcional para ver el footer permamente */
+            overflow-y: scroll;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            Header
+        </div>
+
+
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, at libero esse optio itaque iure dolore sunt
+            eius laboriosam architecto, cupiditate aspernatur perferendis veritatis sit recusandae accusamus adipisci
+            vel natus.
+        </div>
+
+
+        <div class="footer">
+            Footer
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
