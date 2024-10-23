@@ -28,6 +28,7 @@
 
         .header {
             display: flex;
+            
         }
         .container {
             display: flex;
@@ -38,6 +39,9 @@
         .content {
             display: flex;
             flex: 1;
+            overflow-y: scroll; 
+
+         /* fija una barra de scroll en la derecha */
 
         }
 
@@ -71,8 +75,20 @@
         list-style:none;
         
     }
+    .marca {
+        width: 80px;
+    }
 
 
+    .banner {
+        display: flex;
+        justify-content:center;
+        padding-bottom: 20px;
+        min-height: 50vh;
+        height: 350px;         
+        
+        
+    }
     
     </style>
 
@@ -84,22 +100,30 @@
 
     <div class="header">
         <div>
-            Logo
+            <img class="marca" id="img" src="img/logo.png" alt="imag">
+
         </div>
 
         <div class="menu">
+
             <ul>
                 <li>Inicio </li>
                 <li>Acerca de</li>
                 <li>Servicios</li>
                 <li>Contacto</li>
-           </ul>
+        </ul>
         </div>
     </div>
+<div class="banner">
+    <img class="banner" id="img" src="img/banner.png" alt="imag">
 
+</div>
     <div class="content">
 
         <div class="sidebar">
+
+
+
             <ul id="sidebar-ul">
                 <h1>Barra lateral</h1>
                 <li><a href="./">Elemento 1</a></li>
@@ -111,6 +135,7 @@
         </div>
 
         <div class="contenidosecundario">
+
             <h1>Contenido Pricipial</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat delectus exercitationem maiores
                     deserunt consequuntur? Itaque corrupti alias veritatis ipsam nisi nihil culpa mollitia consectetur
@@ -120,7 +145,7 @@
 
     <div class="footer">
         Derechos de autor ©2024 Nombre de la empresa
-     </div>
+    </div>
 
 </div>
 
