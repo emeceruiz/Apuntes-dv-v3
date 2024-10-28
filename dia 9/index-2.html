@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 300px;
+            position: relative
+                /* cualquier cosa excepto static */
+        }
+
+        .box {
+            position: absolute;
+            border: 1px solid #fd1212;
+        }
+
+        .img {
+            width: 100%;
+            opacity: 0.5;
+            position: center;
+
+        }
+
+        .topleft {
+            top: 10px;
+            left: 10px;
+
+
+        }
+
+        .topright {
+            top: 10px;
+            right: 10px;
+        }
+
+        .center {
+            top: 50%;
+            /* width: 100%;
+            text-align: center; */
+
+
+            /* centrado perfecto  */
+            transform: translate(-50%, -50%);
+            left: 50%;
+
+
+
+        }
+
+        .bottomleft {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .bottomright {
+            bottom: 10px;
+            right: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Positions absolute gato</h1>
+
+
+    <div class="container">
+        <img src="./img/gato.jpeg" alt="imagen del gatito">
+
+        <div class="box topleft">Arriba - Izq</div>
+        <div class="box topright">Arriba - Der</div>
+        <div class="box center">Center(w100)</div>
+        <div class="box bottomleft">Abajo - Izq</div>
+        <div class="box bottomright">Abajo - Der</div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
