@@ -24,6 +24,7 @@
             height: 100px;
             border: 1px solid #ccc;
             background-color: #f0f0f0;
+            padding: 10px;
 
         }
 
@@ -33,6 +34,10 @@
             left: 20px;
 
 
+        }
+        h2{
+            border-top: 1px solid gray;
+            margin: 20px 0 40px 0;
         }
 
         /* las diferentes posiciones */
@@ -119,18 +124,26 @@
 
     <h2>Sticky</h2>
 
-    <div class="container"
-        style=" height: 300;
+    <p>Comportamiento combinado entre "static" y "fixed"<br>
+        utiliza el top y left como punto de adhesion.<br>
+        Se posiciona repecto a la venta del navegado (viewport)<br>
+
+        Se queda fijo en la pantalla(fixed) hasta que el elemento padre se acaba. 
+    </p>
+
+
+    <div class="container" 
+    style=" height: 300px;
             width: 400px;
-            overflow:scroll;
-            border:1px solid  gray
+            overflow: scroll;
+            padding: 20px;
+            border: 1px solid gray;
             ">
         <div class="box"></div>
-        <div class="box yellow sticky"> Sticky</div>
-        <div class="box" style="height: 200px;"></div>
+        <div class="box yellow sticky">Sticky</div>
+        <div class="box" style="height:2000px"></div>
+        
     </div>
-
-
 
 
 </body>
