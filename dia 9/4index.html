@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Connect Desafíos</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(27, 27, 27);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            background-color: #F2D388;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 230px;
+            padding: 10px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .menu a:hover {
+            color: rgb(122, 122, 122);
+        }
+
+        .navegacion {
+            display: flex;
+            align-items: center;
+            padding-right: 40px;
+        }
+
+        .iconos img {
+            width: 25px;
+        }
+
+        .content {
+            flex: 1;
+            background-size: cover;
+            background-color: #A7D2CB;
+            padding: 100px;
+        }
+
+        .content p {
+
+            font-size: 15px;
+            padding: 10px;
+
+        }
+
+        .content h1 {
+            font-size: 50px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #F2D388;
+            padding: 20px;
+            padding-right: 200px;
+        }
+
+        .Copyright {
+            color: rgb(27, 27, 27);
+        }
+
+        .footer ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer a:hover {
+            color: rgb(122, 122, 122);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            margin: 10px 0;
+        }
+
+        .card button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="img/lunes.jpg" alt="Sample photo">
+            <h3>Lunes</h3>
+            <p>Receta: Ensalada de quinoa con verduras asadas.
+                <br><br><br>
+                Ingredientes: Quinoa, pimientos, calabacín, berenjena, cebolla, aceite de oliva, limón, sal y pimienta.
+            </p>
+            <button>Ver Más</button>
+        </div>
+        <div class="card">
+            <img src="img/martes.jpg" alt="Sample photo">
+            <h3>Martes</h3>
+            <p>Receta: Berenjenas al horno rellenas de carne y queso.
+                <br><br><br>
+                Ingredientes: Berenjenas, carne picada (puede ser de res o pavo), cebolla, tomate, queso rallado,
+                especias (orégano, comino).
+            </p>
+            <button>Ver Más</button>
+        </div>
+        <div class="card">
+           <img src="img/miercoles.jpg" alt="Sample photo">
+            <h3>Miércoles</h3>
+            <p>Receta: Pasta al pesto con pollo.
+                <br><br><br>
+                Ingredientes: Pasta, pechuga de pollo, pesto (puedes hacerlo casero), piñones, queso parmesano.
+             </p>
+            <button>Ver Más</button>
+        </div>
+
+        <div class="card">
+            <img src="img/jueves.jpg" alt="Sample photo">
+            <h3>Jueves</h3>
+            <p>Receta: Salmón a la parrilla con salsa de limón y eneldo.
+                <br><br><br>
+                Receta: Salmón a la parrilla con salsa de limón y eneldo.
+                Ingredientes: Filetes de salmón, limón, eneldo fresco, aceite de oliva, sal y pimienta. Sirve con espárragos a la plancha.
+            </p>
+            <button>Ver Más</button>
+        </div>
+
+        <div class="card">
+            <img src="img/viernes.jpg" alt="Sample photo">
+            <h3>Viernes</h3>
+            <p>Receta: Tacos de camarón.
+                <br><br><br>
+                Ingredientes: Tortillas, camarones, repollo rallado, salsa de mango, aguacate.
+            </p>
+            <button>Ver Más</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
