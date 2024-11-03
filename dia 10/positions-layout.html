@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Positions Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
     <style>
         * {
             box-sizing: border-box;
@@ -14,22 +16,53 @@
         }
 
 
+        .body {
+            display: flex;
+            flex-direction: column;
+            /* height:100vh; */
+            gap: 20px;
+        }
 
         .container {
             display: flex;
-            flex-direction: column;
-            height: 100vh;
+            width: 100%;
+            flex-grow: 1;
+            gap: 20px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-image: liear-gradient(203deg, #3edfd7 0%, #29a49d 90%);
 
 
         }
 
+        .main {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 20px;
+
+
+        }
+
+        .item {
+            flex: 1;
+            /* Cada elemento ocupa el mismo espacio */
+            margin: 10px;
+            /* Espaciado entre elementos */
+        }
 
         .header {
             height: 100px;
             background-color: #1EAAFC;
             background-image: linear-gradient(160deg, #6C52D9 0%, #9B8AE6 127%);
-        }
 
+            /* posision skicky del header */
+            position:sticky;
+            top:0;
+
+        }
 
         .footer {
             display: flex;
@@ -38,21 +71,27 @@
             background-color: #F2D388;
             padding: 20px;
             padding-right: 200px;
+            justify-content: center;
         }
 
+        .content-row {
+            display: flex;
+            flex-grow: 0;
+            gap: 20px;
 
-        .sidebar {
-            background-image: linear-gradient(203deg, #3EDFD7 0%, #29A49D 90%)
         }
 
         .content-1,
-        .content-2,
-        .content-3 {
+        .content-2 .content-3 {
             flex-grow: 1;
+
+            grid-column-end: 2;
+
             background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
+            gap: 20px;
+
+
         }
-
-
 
 
         .item {
@@ -67,20 +106,42 @@
             align-items: center;
             font-size: 18px;
             font-weight: bold;
+
+        }
+
+        .footer {
+            height: 100px;
+        }
+
+        .main .item {
+            height: 200px;
+
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 150px;
+            right: 20px;
+
+            background-color: white;
+            border: radius 50%;
+            width: 39px;
+            height: 30px;
+
+        }
+
+        .whatsapp i {
+            font-size: 48px;
+            color: green;
+            margin-top: -3px;
+            margin-left: -1px;
         }
     </style>
-
-
-
 
 
 </head>
 
 <body>
-
-
-
-
     <div class="item header"> header</div>
 
     <div class="container">
@@ -97,14 +158,42 @@
                 <div class="content-2 item"> Contenido 3</div>
 
             </div>
+
+
+
+            <!-- ICONO DE WHATSAPP -->
+
+            <dix class="whatsapp">
+                <i class="fa fa-whatsapp"></i>
+
+            </dix>
+
+
         </div>
-
-
 
 
         <div class="footer item ">footer</div>
 
+        <script>
 
+
+            // 1. Seleccionar el DIV a modificar
+            const mainDiv = document.querySelector('.main');
+
+            // 2. Crear un HTML
+            const filaHTML = `
+        <div class="content-row">
+            <div class="content-2 item">Contentido 2</div>
+            <div class="content-3 item">Contenido 3</div>
+        </div>
+        `;
+
+            // 3. Agregar la caja "filaHTML" dentro de main 3 veces
+            mainDiv.innerHTML += filaHTML;
+            mainDiv.innerHTML += filaHTML;
+            mainDiv.innerHTML += filaHTML;
+
+        </script>
 
 
 </body>
