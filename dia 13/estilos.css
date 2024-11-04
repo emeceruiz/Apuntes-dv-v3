@@ -1,0 +1,26 @@
+/* ## Ejemplos
+
+<!-- Ejemplo 1 */ -->
+
+#myElement { color: yellow; } /*1 0 0 */
+#myElement .myBox { color: green;} /*1 0 0 WIN */
+
+
+
+<!-- /* Ejemplo 2 */ -->
+#myElement { color: green; } /*1 0 0 */
+.bodyClass .sectionClass .parentClass[id="myElement"] { color: yellow; }/* 0 4 0 */
+
+
+<!-- /* Ejemplo 3 */ -->
+:root input { color: green; }   /* 0 1 1  */
+html body main input { color: yellow; }/* 0 0 4 */
+
+
+
+<!-- /* Ejemplo 4 */ -->
+input.myClass { color: yellow; } /*0 1 1  */
+:root input { color: green; } /*0 1 1 */
+input[type="checkbox"] { color: orange; } /* 0 1 1 */
+
+
