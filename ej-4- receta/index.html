@@ -23,7 +23,7 @@
 
         header {
             background: #0AADBF;
-            color:#0D0D0D;
+            color: #0D0D0D;
             padding: 20px;
             text-align: center;
         }
@@ -57,25 +57,28 @@
         .container {
             display: flex;
             justify-content: center;
-            gap: 20px; /* Espacio entre figuras */
+            gap: 20px;
+            /* Espacio entre figuras */
             flex-wrap: wrap;
-            
+
 
 
         }
+
         figure {
-            margin: 20px 0;/* Eliminar márgenes por defecto */
-            text-align: center; /* Centrar el contenido de la figura */
+            margin: 20px 0;
+            /* Eliminar márgenes por defecto */
+            text-align: center;
+            /* Centrar el contenido de la figura */
         }
+
         img {
-            max-width: 100%; /* Asegura que las imágenes no excedan el tamaño del contenedor */
-            height: auto;    /* Mantiene la proporción de la imagen */
+            max-width: 100%;
+            /* Asegura que las imágenes no excedan el tamaño del contenedor */
+            height: auto;
+            /* Mantiene la proporción de la imagen */
             border-radius: 8px;
-            width: 280px;
-            height: 336px;
-            
-      
-           
+          
         }
 
         footer {
@@ -87,12 +90,11 @@
         }
 
         aside {
-            background:#b2d9dd;
+            background: #b2d9dd;
             padding: 10px;
             margin: 20px 0;
             border-radius: 5px;
         }
-
     </style>
 </head>
 
@@ -103,25 +105,6 @@
     </header>
 
 
-
-    <div class="container">
-        <figure>
-            <img src="./img/tarta-manzana1.jpg" alt="Tarta de manzana recién horneada">
-            <figcaption>1.Preparacion de la tarta</figcaption>
-        </figure>
-        <figure>
-            <img src="./img/tarta-manzana2.jpg" alt="Tarta de manzana recién horneada">
-            <figcaption>2.Cortar manzana</figcaption>
-        </figure>
-        <figure>
-            <img src="./img/tarta-manzana4.jpg" alt="Tarta de manzana recién horneada">
-            <figcaption>3.Preparar masa</figcaption>
-        </figure>
-        <figure>
-            <img src="./img/tarta-manzana3.jpg" alt="Tarta de manzana recién horneada">
-            <figcaption>4.Tarta de manzana recién horneada</figcaption>
-        </figure>
-    </div>
     <main>
         <article>
             <section>
@@ -158,6 +141,14 @@
                     <li>Dejar enfriar antes de servir.</li>
                 </ol>
             </section>
+
+            <div class="container">
+
+                <figure>
+                    <img src="./img/tarta-manzana3.jpg" alt="Tarta de manzana recién horneada">
+                    <figcaption>1.Tarta de manzana recién horneada</figcaption>
+                </figure>
+            </div>
 
         </article>
 
