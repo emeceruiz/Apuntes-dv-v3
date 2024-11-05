@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Receta fácil y deliciosa de tarta de manzana. Ideal para postres y ocasiones especiales.">
+    <meta name="description"
+        content="Receta fácil y deliciosa de tarta de manzana. Ideal para postres y ocasiones especiales.">
     <meta name="keywords" content="receta, tarta de manzana, postres, cocina fácil">
     <meta name="author" content="Chef Juan Pérez">
     <title>Tarta de Manzana</title>
@@ -16,28 +17,51 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #F2AB27;
+            background-color: #D98E04;
         }
 
-        .header {
-            color: #0D0D0D;
-            padding: 20px;
-            text-align: center;
-            background: #0AADBF;
-        }
-
-        .header-logo {
-            display: block;
-            width: 15%;
+        .menu {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px;
             padding: 20px;
             display: flex;
-            justify-content: space-between;
-            background: #0AADBF;
+
+            
+}
+        
+
+        .menu a:hover {
+            color: rgb(122, 122, 122);
+        }
+
+        
+
+        .header2 {
+            background: #A65D03;
+            color: #260F01;
+            padding: 20px;
+            text-align: center;
+            /* Centra horizontalmente */
+
+        }
+
+        .headerlogo {
+            width: 100px;
+            /* Ajusta según tus necesidades */
+            background: #D98E04;
+            float: block;
+            padding: 20px;
+            width: 230px;
+            padding: 10px;
+
         }
 
         h1 {
             margin: 0;
-            font-size: 50px;
+            font-size: 30px;
+            justify-content: center;
+
         }
 
         main {
@@ -50,8 +74,8 @@
         }
 
         h2 {
-            color: #0AADBF;
-            border-bottom: 2px solid #0AADBF;
+            color: #A65D03;
+            border-bottom: 2px solid #A65D03;
             padding-bottom: 5px;
         }
 
@@ -82,31 +106,42 @@
             text-align: center;
             margin: 20px 0;
             padding: 10px;
-            background: #F28D35;
+            background: #A65D03;
             color: white;
-            display: block;
-
         }
 
         aside {
-            background: #b2d9dd;
+            background: #BFA688;
             padding: 10px;
             margin: 20px 0;
             border-radius: 5px;
         }
+
+
     </style>
 </head>
 
 <body>
-    <header class="header-logo">
+    <header class="headerlogo">
         <img src="img/logo.png" alt="Logo de Chef Connect">
+
     </header>
 
-    <header class="header">
+    <header class="header2">
         <h1>Tarta de Manzana</h1>
         <p><strong>Autor:</strong> Chef Juan Pérez</p>
     </header>
 
+    <section>
+        <div class="navegacion">
+
+            <ul class="menu">
+                <li><a href="./index-LP.html">Home</a></li>
+                <li><a href="./index-Recetas.html">Recetas</a></li>
+                <li><a href="./index-Intercambios.html">Comunidad</a></li>
+                <li><a href="./index-desafios.html">Desafios</a></li>
+            </ul>
+    </section>
     <main>
         <article>
             <section>
@@ -162,7 +197,8 @@
     </main>
 
     <footer>
-        <p>¡Gracias por visitar nuestra receta! Comparte tu experiencia y no dudes en explorar más recetas en Chef Connect.</p>
+        <p>¡Gracias por visitar nuestra receta! Comparte tu experiencia y no dudes en explorar más recetas en Chef
+            Connect.</p>
     </footer>
 </body>
 

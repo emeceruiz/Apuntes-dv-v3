@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANA Valencia 2024</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./index.html">Inicio</a></li>
+                <!-- <li class="nav__item"><a href="#resumen">Resumen</a></li> -->
+                <!-- <li class="nav__item"><a href="#mapa">Mapa</a></li> -->
+                <li class="nav__item"><a href="#asistencia">Centros de Asistencia</a></li>
+                <li class="nav__item"><a href="#voluntariado">Voluntariado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="resumen" class="section">
+            <h1 class="section__title">DANA Valencia 2024</h1><br><br>
+            <p>La DANA (Depresión Aislada en Niveles Altos) que afectó a la Comunidad Valenciana dejó importantes inundaciones y destrozos. Miles de personas fueron evacuadas...</p>
+        </section>
+
+        <section id="mapa" class="section">
+            <h2 class="section__title">Mapa de Ubicación</h2> <br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section id="asistencia" class="section">
+               <br><br>
+            <h2 class="section__title">Centros de Asistencia</h2>
+            <ul>
+                <li>Cruz Roja Española - Delegación de Valencia:  Distribución de alimentos y recursos, Teléfono: 96 40 22 92</li>
+                <li>Valencia Acoge - Ofrece asistencia a personas vulnerables, Teléfono: 96 10 22 92</li>
+            </ul>
+        </section>
+
+        <section id="voluntariado">
+            <h2>Formulario de Voluntariado</h2>
+            <form action="#" method="POST">
+                <!-- Tabla 1: Información personal -->
+                <table class="voluntariado-table">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Información</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre Completo</td>
+                            <td><input type="text" name="nombre" required></td>
+                        </tr>
+                        <tr>
+                            <td>Correo Electrónico</td>
+                            <td><input type="email" name="correo" required></td>
+                        </tr>
+                        <tr>
+                            <td>Teléfono</td>
+                            <td><input type="tel" name="telefono" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+                <!-- Tabla 2: Preferencias de Voluntariado -->
+                <table class="voluntariado-table">
+                    <thead>
+                        <tr>
+                            <th>Área de Voluntariado</th>
+                            <th>Preferencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ayuda a damnificados</td>
+                            <td><input type="radio" name="area" value="damnificados" required> Sí</td>
+                        </tr>
+                        <tr>
+                            <td>Asistencia en centros de acogida</td>
+                            <td><input type="radio" name="area" value="centros" required> Sí</td>
+                        </tr>
+                        <tr>
+                            <td>Recolección de donaciones</td>
+                            <td><input type="radio" name="area" value="donaciones" required> Sí</td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+                <!-- Botón de envío -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Emergencias y Catástrofes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+}
+
+
+
+/* Header */
+.header {
+    display: flex;               /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos (menú y logo) */
+    align-items: center;         /* Alinea verticalmente los elementos en el centro */
+    padding: 20px 20px 20px 20px;          /* Espaciado interno */     
+    color: white;  
+    flex-direction: row-reverse;   
+    background-color:#ecebe9;          
+
+}
+
+.logo img {
+    max-height: 40px;
+    /* Controlamos el tamaño del logo */
+}
+
+
+
+.header__nav .nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.nav__item a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 15px;
+
+
+}
+
+.nav__item a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.main__title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+
+
+/* Catastrophe Cards */
+.catastrophes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.catastrophe-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.catastrophe-card__image {
+    width: 100%;
+    height: 200px;
+    /* Definimos una altura fija para las imágenes */
+    object-fit: cover;
+    /* Hace que la imagen ocupe todo el contenedor sin distorsionarse */
+    object-position: center;
+    /* Alinea la imagen al centro */
+}
+
+.catastrophe-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.catastrophe-card__date {
+    font-size: 1.2rem;
+}
+
+.catastrophe-card__title {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.catastrophe-card__link {
+    font-size: 1.1rem;
+    color: #f8f8f8;
+    text-decoration: none;
+    background-color: #0AADBF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.catastrophe-card__link:hover {
+    background-color: #008fb3;
+}
+
+.another {
+    display: grid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.another_image {
+    width: 80%;
+    height: 400px;
+    /* Definimos una altura fija para las imágenes */
+    object-fit: cover;
+    /* Hace que la imagen ocupe todo el contenedor sin distorsionarse */
+    object-position: center;
+    /* Alinea la imagen al centro */
+    display:flex
+    /* object-fit: cover; */
+    /* Hace que la imagen ocupe todo el contenedor sin distorsionarse */
+    /* object-position: center;
+    border-radius: 10px;
+     */
+    
+}
+
+.catastrophe-card__date2 {
+    font-size: 50px;
+
+}
+.catastrophe-card__title2{
+    font-size: 40px;
+    margin: 20px 0;
+
+}
+
+.card-btn2{
+    border: none;
+    cursor: pointer;
+    background-color: #0AADBF;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;    
+
+
+}
+
+.card-btn2:hover {
+    background-color: #008fb3;
+    
+
+
+}
+
+
+
+
+.catastrophe-card__overlay2 {
+    position: absolute;
+    width: 77%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    
+}
+
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .catastrophes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .catastrophes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Estilos adicionales */
+button {
+    border: none;
+    cursor: pointer;
+    background-color: #0AADBF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #008fb3;
+
+
+}
+
+.dana-explanation {
+    background-color: #ffffff;
+    /* Fondo blanco para la sección */
+    padding: 40px 20px;
+    /* Espaciado alrededor de la sección */
+    margin-top: 40px;
+    /* Espacio desde la última sección */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    text-align: center;
+    /* Centrar el texto */
+}
+
+.dana-explanation__title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dana-explanation__text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.dana-explanation__image img {
+    width: 100%;
+    /* La imagen ocupará el ancho del contenedor */
+    max-width: 600px;
+    /* Limitar el tamaño máximo de la imagen */
+    height: auto;
+    /* Mantener la proporción de la imagen */
+    margin-top: 20px;
+    border-radius: 8px;
+    /* Bordes redondeados para la imagen */
+    list-style: none;
+
+}
+
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    /* Establece un ancho máximo para el cuadro */
+    margin: 20px auto;
+    /* Centra el cuadro horizontalmente */
+    padding: 20px;
+    /* Espaciado interno dentro del cuadro */
+    border: 1px solid #ccc;
+    /* Borde suave alrededor del cuadro */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    background-color: #f9f9f9;
+    /* Fondo claro para el cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para darle profundidad */
+
+}
+
+
+.form-container h2 {
+    text-align: center;
+    /* Centra el texto del título */
+    margin-bottom: 20px;
+    /* Espacio debajo del título */
+}
+
+input[type="text"],
+input[type="email"],
+button {
+    width: 100%;
+    /* Hace que los campos ocupen todo el ancho disponible */
+    padding: 10px;
+    /* Espaciado interno dentro de los campos */
+    margin-bottom: 15px;
+    /* Espacio entre cada campo */
+    border: 1px solid #ccc;
+    /* Borde suave alrededor de los campos */
+    border-radius: 4px;
+    /* Bordes ligeramente redondeados */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+}
+
+ul {
+    list-style: none;
+}
