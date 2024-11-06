@@ -124,16 +124,15 @@ body {
 
 
 /* Banner principal */
-.another {
+.banner {
     display: flex; /* Usamos flexbox para centrar el contenido */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
 
-.another_image {
+.catastrophe-card--banner {
     width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
     height: auto; /* Mantiene la relación de aspecto de la imagen */
     max-height: 300px; /* Define una altura máxima para la imagen */
@@ -180,10 +179,10 @@ body {
     text-align: center;
     padding: 20px;
     
+}
 
-    
-
-    
+.catastrophe-card__info{
+    font-size:15px;
 }
 /* Footer */
 .footer {
@@ -195,16 +194,17 @@ body {
 }
 
 /* Estilos adicionales */
-button {
+.catastrophe-card__button {
     border: none;
     cursor: pointer;
     background-color: #0AADBF;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    width: 50%;
 }
 
-button:hover {
+.catastrophe-card__button:hover {
     background-color: #008fb3;
 
 }
@@ -303,11 +303,6 @@ button {
     /* Tamaño de la fuente */
 }
 
-ul {
-
-    list-style: none;
-
-}
 
 /* Responsive Design */
 @media (min-width: 768px) {
@@ -374,12 +369,12 @@ ul {
     }
 
     #mapa iframe {
-        height: 350px;
+        height: 250px;
     }
 }
 
 /* Para teléfonos móviles */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .header__nav .nav__list {
         flex-direction: column;
         gap: 5px;
@@ -404,4 +399,4 @@ ul {
     #mapa iframe {
         height: 300px;
     }
-}
+} */
