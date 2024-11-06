@@ -8,88 +8,89 @@
 body {
     font-family: Arial, sans-serif;
     /* background-color: #f4f4f4; */
+    background-color: #f4f4f4
 }
-
-
 
 /* Header */
 .header {
-    display: flex;               /* Usamos flexbox para alinear los elementos */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos (menú y logo) */
-    align-items: center;         /* Alinea verticalmente los elementos en el centro */
-    padding: 20px 20px 20px 20px;          /* Espaciado interno */     
-    color: white;  
-    flex-direction: row-reverse;   
-    background-color:#ecebe9;          
-
-}
-
-.logo img {
-    max-height: 40px;
-    /* Controlamos el tamaño del logo */
-}
-
-
-
-.header__nav .nav__list {
     display: flex;
-    justify-content: space-between;
-    list-style: none;
+    justify-content: space-between; /* Distribuye el espacio entre el logo y el menú */
+    align-items: center; /* Alinea verticalmente al centro */
+    padding: 20px 40px;
+    background-color: #ecebe9;
+    flex-wrap: wrap;
+}
 
+/* Estilos para el logo */
+.logo img {
+    display: flex;
+    max-height: 50px; /* Controla el tamaño máximo del logo */
+}
+
+/* Estilos para el menú de navegación */
+.header__nav .nav__list {
+    display: flex; /* Alinea los elementos del menú de forma horizontal */
+    justify-content: flex-end; /* Los alinea hacia la derecha */
+    gap: 20px; /* Espaciado entre los elementos del menú */
+    padding: 0; /* Elimina el padding extra */
+    list-style: none; /* Elimina los puntos de las listas */
 }
 
 .nav__item a {
+    display: flex;
     color: black;
-    text-decoration: none;
-    font-size: 1.1rem;
-    margin: 15px;
-
-
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    font-size: 15px;
+    padding: 5px;
 }
 
 .nav__item a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subraya al pasar el mouse */
 }
 
 /* Main */
 .main {
-    padding: 20px;
     text-align: center;
-}
+     /* display: grid; */
+    /* grid-template-rows: 1fr 3fr;  /* 2 columnas */
+    /* gap: 20px; */
+} */
 
 .main__title {
     font-size: 2rem;
     margin-bottom: 30px;
 }
 
-
-
 /* Catastrophe Cards */
 .catastrophes {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Se ajusta automáticamente a la pantalla */
+    gap: 20px; /* Espaciado entre tarjetas */
     padding: 20px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
 }
 
+/* Estilo de cada tarjeta */
 .catastrophe-card {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ajustada */
     background-color: #fff;
+    margin: 0 auto; /* Centra las tarjetas */
+    width: 100%; /* Las tarjetas ocupan todo el ancho disponible */
 }
 
+/* Estilo de la imagen dentro de la tarjeta */
 .catastrophe-card__image {
-    width: 100%;
-    height: 200px;
-    /* Definimos una altura fija para las imágenes */
+    width: 100%; /* Hacemos que la imagen ocupe el 100% del contenedor */
+    height: 210px;
     object-fit: cover;
-    /* Hace que la imagen ocupe todo el contenedor sin distorsionarse */
     object-position: center;
-    /* Alinea la imagen al centro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo de la superposición de la tarjeta */
 .catastrophe-card__overlay {
     position: absolute;
     top: 0;
@@ -106,6 +107,7 @@ body {
     padding: 20px;
 }
 
+/* Estilos para el texto */
 .catastrophe-card__date {
     font-size: 1.2rem;
 }
@@ -115,110 +117,69 @@ body {
     margin: 10px 0;
 }
 
-.catastrophe-card__link {
-    font-size: 1.1rem;
-    color: #f8f8f8;
-    text-decoration: none;
-    background-color: #0AADBF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 15px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
 
-.catastrophe-card__link:hover {
-    background-color: #008fb3;
-}
-
+/* Banner principal */
 .another {
-    display: grid;
-    padding: 20px;
-    display: flex;
+    display: flex; /* Usamos flexbox para centrar el contenido */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
+   
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
 
 .another_image {
-    width: 80%;
-    height: 400px;
-    /* Definimos una altura fija para las imágenes */
-    object-fit: cover;
-    /* Hace que la imagen ocupe todo el contenedor sin distorsionarse */
-    object-position: center;
-    /* Alinea la imagen al centro */
-    display:flex
-    /* object-fit: cover; */
-    /* Hace que la imagen ocupe todo el contenedor sin distorsionarse */
-    /* object-position: center;
-    border-radius: 10px;
-     */
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    max-height: 300px; /* Define una altura máxima para la imagen */
+    object-fit: cover; /* Hace que la imagen cubra el contenedor sin deformarse */
+    object-position: center; /* Centra la imagen dentro del contenedor */
     
 }
 
 .catastrophe-card__date2 {
-    font-size: 50px;
-
+    font-size:15px;
 }
-.catastrophe-card__title2{
+
+.catastrophe-card__title2 {
     font-size: 40px;
     margin: 20px 0;
-
 }
 
-.card-btn2{
+.card-btn2 {
     border: none;
     cursor: pointer;
     background-color: #0AADBF;
     color: white;
     padding: 10px 30px;
-    border-radius: 5px;    
-
-
+    border-radius: 5px;
 }
 
 .card-btn2:hover {
     background-color: #008fb3;
-    
-
-
 }
 
-
-
-
+/* Overlay sobre la imagen */
 .catastrophe-card__overlay2 {
     position: absolute;
-    width: 77%;
-    height: 400px;
+    justify-content: center;
+    width: 100%; /* Asegura que el overlay ocupe todo el ancho del contenedor */
+    height: 300px; /* La altura se mantiene fija */
     background: rgba(0, 0, 0, 0.4);
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+
     align-items: center;
     color: white;
     text-align: center;
+    padding: 20px;
+    
+
+    
+
     
 }
-
-
-
-/* Responsive Design */
-@media (min-width: 768px) {
-    .catastrophes {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .catastrophes {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 /* Footer */
 .footer {
     background-color: #333;
@@ -241,35 +202,36 @@ button {
 button:hover {
     background-color: #008fb3;
 
-
 }
 
 .dana-explanation {
     background-color: #ffffff;
     /* Fondo blanco para la sección */
-    padding: 40px 20px;
+    padding: 40px 20px 30px 10px;
     /* Espaciado alrededor de la sección */
     margin-top: 40px;
     /* Espacio desde la última sección */
     border-radius: 8px;
     /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     /* Sombra sutil */
     text-align: center;
     /* Centrar el texto */
+    margin-bottom: 20px;
 }
 
 .dana-explanation__title {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
+
 }
 
 .dana-explanation__text {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -305,16 +267,14 @@ button:hover {
     /* Bordes redondeados */
     background-color: #f9f9f9;
     /* Fondo claro para el cuadro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     /* Sombra sutil para darle profundidad */
-
 }
-
 
 .form-container h2 {
     text-align: center;
     /* Centra el texto del título */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /* Espacio debajo del título */
 }
 
@@ -336,5 +296,104 @@ button {
 }
 
 ul {
+
     list-style: none;
+
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .catastrophes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .catastrophes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Media Queries */
+
+/* Para pantallas grandes */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__nav .nav__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dana-explanation__title {
+        font-size: 1.8rem;
+    }
+
+    .dana-explanation__text {
+        font-size: 1rem;
+    }
+
+    form label, form input, form button {
+        font-size: 1rem;
+    }
+
+    #mapa iframe {
+        height: 400px;
+    }
+}
+
+/* Para tablets o pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header__nav .nav__list {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .dana-explanation__title {
+        font-size: 1.6rem;
+    }
+
+    .dana-explanation__text {
+        font-size: 0.9rem;
+    }
+
+    form label, form input, form button {
+        font-size: 0.9rem;
+    }
+
+    #mapa iframe {
+        height: 350px;
+    }
+}
+
+/* Para teléfonos móviles */
+@media (max-width: 480px) {
+    .header__nav .nav__list {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .dana-explanation__title {
+        font-size: 1.4rem;
+    }
+
+    .dana-explanation__text {
+        font-size: 0.9rem;
+    }
+
+    .form-container {
+        margin-top: 20px;
+    }
+
+    form label, form input, form button {
+        font-size: 0.8rem;
+    }
+
+    #mapa iframe {
+        height: 300px;
+    }
 }
