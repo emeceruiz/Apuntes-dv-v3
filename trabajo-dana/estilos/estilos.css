@@ -79,6 +79,7 @@ body {
     background-color: #fff;
     margin: 0 auto; /* Centra las tarjetas */
     width: 100%; /* Las tarjetas ocupan todo el ancho disponible */
+    
 }
 
 /* Estilo de la imagen dentro de la tarjeta */
@@ -105,6 +106,10 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+    
+}
+.catastrophe-card:hover {
+    box-shadow: none;  /* Elimina la sombra al hacer hover */
 }
 
 /* Estilos para el texto */
@@ -218,6 +223,8 @@ button:hover {
     text-align: center;
     /* Centrar el texto */
     margin-bottom: 20px;
+
+    list-style: none;
 }
 
 .dana-explanation__title {
@@ -276,6 +283,7 @@ button:hover {
     /* Centra el texto del título */
     margin-bottom: 10px;
     /* Espacio debajo del título */
+    
 }
 
 input[type="text"],
