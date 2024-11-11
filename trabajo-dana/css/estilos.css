@@ -7,48 +7,69 @@
 /* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #f4f4f4; */
-    background-color: #f4f4f4
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
 
 
- 
+
 
 /* Estilos para el logo */
 .logo img {
     display: flex;
-    max-height: 50px; /* Controla el tamaño máximo del logo */
+    max-height: 50px;
+    /* Controla el tamaño máximo del logo */
+    margin: 20px 20px;
+    gap: 20px;
+    /* Espaciado entre los elementos del menú */
+    padding: 0;
+    /* Elimina el padding extra */
+    list-style: none;
+    /* Elimina los puntos de las listas */
 }
+
 
 /* Estilos para el menú de navegación */
 .header__nav .nav__list {
-    display: flex; /* Alinea los elementos del menú de forma horizontal */
-    justify-content: flex-end; /* Los alinea hacia la derecha */
-    gap: 20px; /* Espaciado entre los elementos del menú */
-    padding: 0; /* Elimina el padding extra */
-    list-style: none; /* Elimina los puntos de las listas */
+    display: flex;
+    /* Alinea los elementos del menú de forma horizontal */
+    justify-content: flex-end;
+    /* Los alinea hacia la derecha */
+    gap: 20px;
+    /* Espaciado entre los elementos del menú */
+    padding: 0;
+    /* Elimina el padding extra */
+    list-style: none;
+    /* Elimina los puntos de las listas */
+
 }
 
 .nav__item a {
     display: flex;
     color: black;
-    text-decoration: none; /* Elimina el subrayado por defecto */
+    text-decoration: none;
+    /* Elimina el subrayado por defecto */
     font-size: 15px;
     padding: 5px;
+    align-items: center;
 }
 
 .nav__item a:hover {
-    text-decoration: underline; /* Subraya al pasar el mouse */
+    text-decoration: underline;
+    /* Subraya al pasar el mouse */
 }
 
 /* Main */
 .main {
+
     text-align: center;
-     /* display: grid; */
-    /* grid-template-rows: 1fr 3fr;  /* 2 columnas */
-    /* gap: 20px; */
-} */
+    display: grid;
+
+}
+
+
+
 
 .main__title {
     font-size: 2rem;
@@ -58,10 +79,13 @@ body {
 /* Catastrophe Cards */
 .catastrophes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Se ajusta automáticamente a la pantalla */
-    gap: 20px; /* Espaciado entre tarjetas */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Se ajusta automáticamente a la pantalla */
+    gap: 20px;
+    /* Espaciado entre tarjetas */
     padding: 20px;
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho */
 }
 
 /* Estilo de cada tarjeta */
@@ -69,21 +93,17 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ajustada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra ajustada */
     background-color: #fff;
-    margin: 0 auto; /* Centra las tarjetas */
-    width: 100%; /* Las tarjetas ocupan todo el ancho disponible */
-    
+    margin: 0 auto;
+    /* Centra las tarjetas */
+    width: 100%;
+    /* Las tarjetas ocupan todo el ancho disponible */
+
 }
 
-/* Estilo de la imagen dentro de la tarjeta */
-.catastrophe-card__image {
-    width: 100%; /* Hacemos que la imagen ocupe el 100% del contenedor */
-    height: 210px;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Estilo de la superposición de la tarjeta */
 .catastrophe-card__overlay {
@@ -100,10 +120,12 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    
+
 }
+
 .catastrophe-card:hover {
-    box-shadow: none;  /* Elimina la sombra al hacer hover */
+    box-shadow: none;
+    /* Elimina la sombra al hacer hover */
 }
 
 /* Estilos para el texto */
@@ -115,49 +137,59 @@ body {
     font-size: 1.8rem;
     margin: 10px 0;
 }
-.catastrophe-card__button--banner{
-    border: none;
-    cursor: pointer;
-    background-color: #0AADBF;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    width: 20%;
+
+.banner {
+    
+    width: 100%;
+    /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%;
+    /* Hace que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover;
+    /* Hace que la imagen cubra el contenedor sin deformarse */
+    object-position: center;
+    /* Centra la imagen */
 }
 
-Banner principal
+
+
+
+
+/* Banner principal */
+
+
 .catastrophe-card--banner {
-    display: flex; /* Usamos flexbox para centrar el contenido */
+    display: flex;
+    /* Usamos flexbox para centrar el contenido */
     flex-direction: column;
     justify-content: center;
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
-    max-height: 400px; /* Define una altura máxima para la imagen */
-    object-fit: cover; /* Hace que la imagen cubra el contenedor sin deformarse */
-    object-position: center; 
-    padding: 80px 80px;
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: auto;
+    /* Mantiene la relación de aspecto de la imagen */
+    max-height: 350px;
+    /* Define una altura máxima para la imagen */
+    object-fit: cover;
+    /* Hace que la imagen cubra el contenedor sin deformarse */
+    object-position: center;
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
 
-
-.catastrophe-card--banner{
-    border: none;
-    cursor: pointer;
-    background-color: #0AADBF;
-    color: white;
-    padding: 20px 20px;
-    width: 30%;
-} 
-
-
-catastrophe-card--banner
-
-.catastrophe-card__date2 {
-    font-size:15px;
+/* Estilo de la imagen dentro de la tarjeta */
+.catastrophe-card__image {
+    width: 100%;
+    /* Hacemos que la imagen ocupe el 100% del contenedor */
+    height: 210px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.catastrophe-card__title {
-    font-size: 40px;
-    margin: 20px 0;
+.catastrophe-card__info {
+    font-size: 20px;
+    padding: 10px;
+    justify-content: center;
+    padding: 0px;
+    color: black;
+
 }
 
 
@@ -167,40 +199,31 @@ catastrophe-card--banner
 
 }
 
-/* Overlay sobre la imagen */
-.catastrophe-card__overlay2 {
-    position: absolute;
-    justify-content: center;
-    width: 100%; /* Asegura que el overlay ocupe todo el ancho del contenedor */
-    height: 300px; /* La altura se mantiene fija */
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 50px;
-    
-}
 
-.catastrophe-card__info{
-    font-size:15px;
-}
+
 /* Footer */
 .footer {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     font-size: 0.9rem;
 }
 
+.catastrophe-card__button--banner {
+    border: none;
+    cursor: pointer;
+    background-color: #0AADBF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 40%;
+}
 
 
 
-/* Estilos adicionales */
+/* Estilos adicionales correcto */
 .catastrophe-card__button {
     border: none;
     cursor: pointer;
@@ -208,7 +231,7 @@ catastrophe-card--banner
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    width: 20%;
+    width: 30%;
 }
 
 .catastrophe-card__button:hover {
@@ -290,7 +313,7 @@ catastrophe-card--banner
     /* Centra el texto del título */
     margin-bottom: 10px;
     /* Espacio debajo del título */
-    
+
 }
 
 input[type="text"],
@@ -308,6 +331,7 @@ button {
     /* Bordes ligeramente redondeados */
     font-size: 16px;
     /* Tamaño de la fuente */
+
 }
 
 
@@ -347,7 +371,9 @@ button {
         font-size: 1rem;
     }
 
-    form label, form input, form button {
+    form label,
+    form input,
+    form button {
         font-size: 1rem;
     }
 
@@ -371,7 +397,9 @@ button {
         font-size: 0.9rem;
     }
 
-    form label, form input, form button {
+    form label,
+    form input,
+    form button {
         font-size: 0.9rem;
     }
 
