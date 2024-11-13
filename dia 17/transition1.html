@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transciones 1</title>
+
+    <style>
+        /* body {
+            display: flex;
+            gap: 5px;
+        } */
+        .btn {
+            background-color:green;
+            width: 100px;
+            transition: width 2s ease 0.4s, background-color 2s ease 0.4s;
+        }
+
+        .btn:hover{
+            background-color: yellow;
+            width: 200px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        
+
+        .box1 {
+            transition: width 2s, height 2s, background-color 2s;
+        }
+
+        
+
+        .box1:hover{
+            width: 200px;
+            height: 200px;
+            background-color:blue;
+        }
+
+
+        .box2 {
+
+
+            /* ease linear  ease-in ease-out ease-in-out cubic-zeier ()*/
+
+            transition: width 4s ease linear;
+
+        }
+
+        .box2:hover{
+            width: 500px;
+
+        }
+        
+        .box3 {
+            transition: all 1s; 
+            border:1px dotted green 
+        }
+
+        .box3:hover {
+            border:4px dotted blue ;
+            rotate: 70deg;
+
+        }
+
+        .box3:focus{
+            background-color: aqua;
+
+        }
+
+        .box4{
+            flex: 1 1 200px
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+<section class="cubos">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <a href="#" class="box box3">Click Me</a>
+    <div class=" box box4"></div>
+
+</section>
+<button class="btn"> Click me</button>
+
+
+
+</body>
+</html>
