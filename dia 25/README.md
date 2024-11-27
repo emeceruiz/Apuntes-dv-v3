@@ -41,7 +41,11 @@ if (true) {
     let nombre="Juan";
     console.log("Hola "+nombre);
     
+} else{
+    console.log(nombre); // no definido 
+    /
 }
+
 
 console.log("Hola "+nombre); // Error :"nombre" is not defined
 
